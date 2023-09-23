@@ -32,4 +32,3 @@ jobs:
       run: docker build . --file Dockerfile --tag ghcr.io/bara1999/express-docker:${{ steps.image_version.outputs.gitsha }}
     - name:Publish docker image
       run: docker push ghcr.io/bara1999/express-docker:${{ steps.image_version.outputs.gitsha }}
-      
