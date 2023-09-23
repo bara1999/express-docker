@@ -17,7 +17,7 @@ services:
     restart: always
 
   app:
-    image: ghcr.io/bara1999/express-docker:936d4a3
+    image: ghcr.io/bara1999/express-docker:$GIT_VERSION
     restart: always
     environment:
       - PORT=80
